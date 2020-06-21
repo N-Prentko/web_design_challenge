@@ -1,0 +1,128 @@
+<!--nPrentko-->
+
+<!--Beginning HTML script-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <!--Beginning of head-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!--Ending of head-->
+  </head>
+
+    <!--Beginning of body-->
+    <body>
+      <!-- Navigation -->
+      <div class="navigation">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="col-sm-12 col-md-2">
+              <a class="navbar-brand"  href="index.html"><div style="background-color:#c15d00;" href="index.html">Latitude</div></a>
+              <button class="navbar-toggler border border-black " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            
+
+        <!--Adding drop down-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class = "navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navBarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                      </a>
+                          <div class="dropdown-menu" aria-labelledby="navBarDropdown" position: right;>
+                              <a class="dropdown-item" href="maximumTemperature.html">Maximum Temperature</a>
+                              <a class="dropdown-item" href="humidity.html">Humidity</a>
+                              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="data.html">Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+            </ul>
+          </div>
+      </nav>
+      </div>
+      <!--End of navigation-->
+
+      <!--Commencing container-->
+      <div class="container-fluid p-5"  >
+        <div class="row" class="mx-auto">
+
+          <!--First Column-->
+          <div class="col-md-12">
+            <!--First Box-->
+                <div class="box div-box">       
+                    <h3 class="text-info font-weight-bold">Comparison: Latitude vs. X</h3>
+                        <hr class="my-4">        
+                    <div>
+                    <p class="card-text text-justify">Click any plot to get an in-depth analysis.</p></div>
+                        
+        
+                        <div class="row" class="mx-auto" >
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="container-fluid p-1" >
+                                <a href="temperature.html" class="imageFocus" onclick="this.focus()">
+                                <img class="card-img-bottom zoom" src="Resources\assets\images\Fig1.png" style='width:100%;' alt="Latitude vs Max Temp Graph">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="container-fluid p-1" >
+                                <a href="humidity.html" class="imageFocus" onclick="this.focus()">
+                                <img class="card-img-top zoom" src="Resources\assets\images\Fig2.png" style='width:100%;' alt="Latitude vs Humidity Graph">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="container-fluid p-1" >
+                                <a href="cloudiness.html" class="imageFocus" onclick="this.focus()">
+                                <img class="card-img-top zoom" src="Resources\assets\images\Fig3.png" style='width:100%;' alt="Latitude vs Cloudiness Graph">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="container-fluid p-1" >
+                                <a href="wind.html" class="imageFocus" onclick="this.focus()">
+                                <img class="card-img-top zoom" src="Resources\assets\images\Fig4.png" style='width:100%;' alt="Latitude vs Wind Speed Graph">
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--Box Ends-->
+                    </div>
+                <!--Column Ends--> 
+                </div>
+            <!--Row Ends-->
+            </div>
+      
+      <!--Container Ends-->
+      </div>
+
+    <!-- Footer -->
+      <footer id="main-footer">
+        <p>Copyright &copy; 2020 nPrentko</p>
+      <!-- Footer Ends --> 
+      </footer>
+
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></script>
+
+    <!--End body-->
+    </body>
+
+<!--Closing HTML script-->
+</html>
